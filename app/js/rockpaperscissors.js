@@ -62,7 +62,7 @@ function getWinner(playerMove,computerMove) {
         winner = 'computer';
     }
     else if (playerMove === computerMove){
-        winner = 'tie game';
+        winner = 'No one';
     }
     
     // Write code that will set winner to either 'player', 'computer', or 'tie' based on the values of playerMove and computerMove.
@@ -95,6 +95,12 @@ function playToFive() {
         console.log(winner + ' wins this round!');
         console.log('The score is currently ' + playerWins + ' to ' + computerWins + '\n');
         
+    }
+    if (playerWins === 5){
+        console.log('Player has won!’);
+    }
+    else if (computerWins === 5){
+        console.log('Computer has won!’);
     }
 }
 
